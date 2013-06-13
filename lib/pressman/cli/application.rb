@@ -8,6 +8,9 @@ module Pressman
       def new(name)
         Pressman::Generators::AppGenerator.start [name]
       end
+
+      desc 'build TYPE', 'Create a new build. Type can be html5, epub, pdf'
+      subcommand 'build', Pressman::Cli::Build
     end
   end
 end

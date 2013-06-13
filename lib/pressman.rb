@@ -1,5 +1,6 @@
 require 'pressman/version'
 
+require 'pressman/cli/build'
 require 'pressman/cli/application'
 require 'pressman/generators/app/app_generator'
 
